@@ -14,37 +14,37 @@
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Full Name</span>
-                    <input type="text" placeholder="Enter your name">
+                    <input type="text" name="username" placeholder="Enter your name" autofocus required>
                 </div>
                 <div class="input-box">
                     <span class="details">Username</span>
-                    <input type="text" placeholder="Enter your username">
+                    <input type="text" placeholder="Enter your username" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="text" placeholder="Enter your email">
+                    <input type="email" placeholder="Enter your email" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter your number">
+                    <input type="tel" placeholder="Enter your number" required maxlength="12">
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="text" placeholder="Enter your password">
+                    <input type="password" placeholder="Enter your password" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Confirm Password</span>
-                    <input type="text" placeholder="Confirm your password">
+                    <input type="password" placeholder="Confirm your password" required>
                 </div>
             </div>
             <div class="gender-details">
                 <div class="gender-title">Gender</div>
                 <div class="gender-sex">
                     <div class="sex">
-                        <input type="radio" id="male" name="gender"> <label for="male">Male</label> 
+                        <input type="radio" id="male" name="gender" required> <label for="male">Male</label> 
                     </div>
                     <div class="sex">
-                        <input type="radio" id="female" name="gender"> <label for="female">Female</label> 
+                        <input type="radio" id="female" name="gender" required> <label for="female">Female</label> 
                     </div>
                 </div>
             </div>
