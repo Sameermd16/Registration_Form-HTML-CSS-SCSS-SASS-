@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+    max-width: 700px;
+    border: 1px solid black;
+    background: white;
+    padding: 1rem;
+}
+.input-box{
+    border: 3px dotted green;
+}
+.user-details{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container > .registration-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    position: relative;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+.container > .registration-title::before{
+    content: '';
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    position: absolute;
+}
+form > .user-details > .input-box{
+    width: 50%;
+}
+form > .user-details > .input-box > input{
+    height: 40px;
+}
