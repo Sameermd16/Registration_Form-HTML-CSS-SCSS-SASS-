@@ -14,17 +14,16 @@ body{
 }
 .container{
     max-width: 700px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background: white;
     padding: 1rem;
-}
-.input-box{
-    border: 3px dotted green;
+    border-radius: 5px;
 }
 .user-details{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .container > .registration-title{
     font-size: 25px;
@@ -43,8 +42,54 @@ body{
     position: absolute;
 }
 form > .user-details > .input-box{
-    width: 50%;
+    /* width: calc(100% / 2 - 20px); */
+    width: 48%;
 }
-form > .user-details > .input-box > input{
-    height: 40px;
+.user-details > .input-box > input{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    outline: none;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+.user-details > .input-box > input:focus {
+    border-color: #9b59b6;
+}
+.user-details > .input-box {
+    margin: 10px 0;
+}
+.user-details > .input-box > .details{
+    margin-bottom: 5px;
+    display: block;
+}
+.gender-details > .gender-title{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.gender-sex{
+    /* border: 1px solid black; */
+    display: flex;
+}
+.gender-sex > .sex > input{
+    margin-right: 10px;
+}
+.sex{
+    margin-right: 100px;
+}
+.button > input{
+    width: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 8px 0;
+    border: none;
+    margin-top: 30px;
+}
+.button > input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    letter-spacing: 1px;
 }
