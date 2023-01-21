@@ -93,3 +93,20 @@ form > .user-details > .input-box{
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
     letter-spacing: 1px;
 }
+.gender-details > .gender-sex > .sex > #male{
+    accent-color: #9b59b6;
+}
+.gender-details > .gender-sex > .sex > #female{
+    accent-color: #9b59b6;
+}
+@media only screen and (max-width: 750px){
+    .user-details{
+        flex-direction: column;
+    }
+    form > .user-details > .input-box {
+        width: 100%;
+    }
+    .container{
+        max-width: 100%;
+    }
+}
